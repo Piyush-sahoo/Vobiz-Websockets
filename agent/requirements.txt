@@ -1,9 +1,9 @@
 fastapi
-python-multipart
 uvicorn[standard]
+python-multipart
 websockets
-deepgram-sdk
 openai
+deepgram-sdk
 pyngrok
 python-dotenv
 requests

@@ -1,0 +1,804 @@
+Mar 17, 2026
+Vobiz Standup - Transcript
+00:00:00
+ 
+Tanishka Rastogi: Hi Vishua. Hi Rajna.
+Rachana Dwivedi: Hello Tanishka. Hello
+Vishwa Sriram: Hello. Could be
+Piyush Sahoo: Hi bro.
+Vishwa Sriram: Okay. Okay.
+Piyush Sahoo: Hello. Hi KK. KK bro. Uh I needed one help bro. Like uh can you tell me the font we are using for our front
+Vishwa Sriram: Huh?
+Piyush Sahoo: end? Do you have a particular file like the font color and everything?
+Vishwa Sriram: You mean the brand template?
+Piyush Sahoo: Yeah. Yeah. Yeah.
+Vishwa Sriram: KK you're not audible.
+Krishnakant Pandey: So audible now. Sure. Yeah. I'll share you in
+Vishwa Sriram: Yes.
+Piyush Sahoo: Yo.
+Krishnakant Pandey: chat.
+Piyush Sahoo: Slack
+Krishnakant Pandey: Yeah. Yes.
+Piyush Sahoo: chatter.
+Vishwa Sriram: Uh KK how is it going with u post flow for the front end?
+Krishnakant Pandey: Yeah, Visha, it's going well. Like I'm testing out so I'll let you know
+Vishwa Sriram: All right. Show man because we need to test one more flow as well.
+ 
+ 
+00:03:33
+ 
+Krishnakant Pandey: shortly.
+Vishwa Sriram: So once you're done we can get on a call and go test it.
+Krishnakant Pandey: Sure. Of course. I'll bring you shortly. Thank you.
+Piyush Sahoo: Can you um verify the KY as well?
+Vishwa Sriram: Uh KC will not have any issues bro
+Piyush Sahoo: in my account.
+Vishwa Sriram: in your account. Okay. Uh yeah, I verified it.
+Piyush Sahoo: It's still showing
+Vishwa Sriram: Wait, I think a might be wrong.
+Piyush Sahoo: uh
+Vishwa Sriram: Uh yeah, I'll verify it now.
+Piyush Sahoo: and add a number as well to make
+Vishwa Sriram: Bro,
+Piyush Sahoo: calls.
+Vishwa Sriram: we have not done any numbers yet.
+Piyush Sahoo: Media is not yet blockerized.
+Vishwa Sriram: Yeah, it's not available in the staging
+Piyush Sahoo: Okay.
+Vishwa Sriram: yet.
+Piyush Sahoo: So how will Kaneska test the uh you know
+Vishwa Sriram: Yeah, it will take some time.
+Piyush Sahoo: trans
+Vishwa Sriram: Uh uh Vicash was saying that he was doing it. So, we'll have to wait till that's done.
+Piyush Sahoo: okay fine dish for your reference
+ 
+ 
+00:04:40
+ 
+Tanishka Rastogi: Yes.
+Piyush Sahoo: dude? How do you go to inspect element man
+Vishwa Sriram: Uh, command shift I.
+Piyush Sahoo: shortcut
+Vishwa Sriram: Which browser? Uh, Brave Right. Command shift.
+Piyush Sahoo: command shift I it didn't work it took me somewhere
+Vishwa Sriram: Uh try com um just right click and do it man. Command shift I should uh ideally let uh let you do uh uh command command
+Piyush Sahoo: No
+Vishwa Sriram: option I bro depends upon the browser. Command command option I
+Piyush Sahoo: command option. Yep, that worked.
+Vishwa Sriram: yeah it depends upon the browser once again. Um,
+Piyush Sahoo: It will take me ages to go through it,
+Vishwa Sriram: one week it will
+Piyush Sahoo: bro.
+Vishwa Sriram: take. I marked you as verified only. Can you hard refresh and check?
+Piyush Sahoo: Let me do
+Vishwa Sriram: See, I've not added other those things.
+Piyush Sahoo: it.
+Vishwa Sriram: So that will be blank. But it will show you as verified.
+Piyush Sahoo: That is blank. to let me see this very status active email.
+ 
+ 
+00:06:14
+ 
+Piyush Sahoo: Yes. Yes. Yes. KYC pending. Fine then. Anyways, we are not making any calls so it shouldn't affect
+Vishwa Sriram: Hey, deep cash.
+Vikash Srivastava: Hi folk sorry for delay I was in a call
+Deep Dholiya: I wish you
+Vishwa Sriram: No
+Vikash Srivastava: with so uh yeah let's
+Vishwa Sriram: issues.
+Vikash Srivastava: let's go with the um okay um so uh KK where are we with the docs page and other
+Krishnakant Pandey: class website I have made few significant changes so you can check that out and uh you can review
+Vikash Srivastava: Thanks.
+Krishnakant Pandey: and tell let me know still I'm working on in-depth pages wherein we are giving details about each product so those pages will also come up uh in couple of days and apart from that I'm working upon uh the post paid changes for front end
+Vikash Srivastava: Okay.
+Krishnakant Pandey: so yeah that will be live shortly on dev console I'll inform
+Vikash Srivastava: So uh postpaid uh we need yeah postpaid and transcription are two things
+Vishwa Sriram: Oh
+Vikash Srivastava: right
+Krishnakant Pandey: Yes.
+ 
+ 
+00:07:59
+ 
+Krishnakant Pandey: Yes. Even transcription is also I'm
+Vishwa Sriram: yes.
+Krishnakant Pandey: looking
+Vishwa Sriram: Uh Vikas uh everything with the post paid is completely done.
+Vikash Srivastava: Sorry.
+Vishwa Sriram: I've even tested the H cases uh with sub account and everything. So that's why it has taken a little bit of time. uh but yeah uh so once the front end changes are live I'll test it one more time uh thoroughly and we can make it uh live uh it should not affect anything in the uh existing platform any
+Vikash Srivastava: Yeah.
+Vishwa Sriram: I'll make it live as soon as uh
+Vikash Srivastava: And also partner account in that case partner can also be postpaid
+Vishwa Sriram: changes yes it is
+Vikash Srivastava: right.
+Vishwa Sriram: yes there's no restriction in that
+Vikash Srivastava: Yeah. So they should be able to add let's say 10,000 rupees in their uh uh accounts right sub like to their customers
+Vishwa Sriram: Mhm.
+Vikash Srivastava: right for partner being a partner
+Vishwa Sriram: Okay. Yeah, got
+Vikash Srivastava: account being a postp doesn't mean that they their their
+ 
+ 
+00:08:49
+ 
+Vishwa Sriram: it.
+Piyush Sahoo: No.
+Vikash Srivastava: customers account will be postp right
+Vishwa Sriram: Yes, that is correct. Uh so partner can have pay us later for refilling their customers uh ballot is what it
+Vikash Srivastava: Yeah. Yep. Yep. Yeah.
+Vishwa Sriram: means.
+Piyush Sahoo: Yep.
+Vikash Srivastava: Right. So, make sense for transcription.
+Vishwa Sriram: Yes. Yeah. Yeah. Yeah.
+Vikash Srivastava: Uh where are we with the transcription
+Vishwa Sriram: Next complete uh transcription also it's done
+Vikash Srivastava: visual?
+Vishwa Sriram: because uh I think Tanishka has also made changes for the outbound as well. uh it's just yet to be tested since we don't have the uh uh I mean calls in the staging yet uh we couldn't test it out so once it's tested we can make it live as well so both of these things are completely uh all
+Vikash Srivastava: Okay. So,
+Vishwa Sriram: right
+Vikash Srivastava: uh these two things uh let's make it live tonight, right? Uh
+Vishwa Sriram: yeah uh before tonight itself I'll have the posted live vic transcription I'll check once that's live and we can make both of
+ 
+ 
+00:09:52
+ 
+Vikash Srivastava: yeah then the transcription yeah uh transcription I I have pushed the changes for chameleio to have its transcription enabled header
+Vishwa Sriram: Mhm.
+Vikash Srivastava: and we'll be pushing changes for free switch to actually pass it along uh uh um like Uh the
+Vishwa Sriram: Mhm.
+Vikash Srivastava: problem here I'm facing is like how do I inform this to recording enabled uh recording uploader service right that recording uploader service needs to know right that hey I need to uh also do the transcription right does it make
+Vishwa Sriram: Yeah.
+Vikash Srivastava: sense then only or or we can the other way around
+Vishwa Sriram: Mhm.
+Vikash Srivastava: is like when we are fetching the trunk detail uh uh uh from like we do actually uh uh uh call the
+Krishnakant Pandey: Call it.
+Vikash Srivastava: CDR service and all right for recording anyways to get the
+Vishwa Sriram: Mhm.
+Vikash Srivastava: uh like if the trunk uh trunk is enabled with transcription right so whenever it is enabled backend API should automatically go and do the transcription
+Vishwa Sriram: Got
+Vikash Srivastava: Right? Because uh even if you send the transcription enabled header,
+ 
+ 
+00:11:15
+ 
+Vishwa Sriram: it.
+Vikash Srivastava: it is the job of backend API. Right? Uh how do I pass it to these are two async services,
+Vishwa Sriram: True.
+Vikash Srivastava: right? Uh you have a recording file. So rather than passing it from chameleio and all what I'm thinking that when back end is getting this save recording API right we are making this save recording API call right uh hello so if it is save recording API
+Vishwa Sriram: Aha.
+Krishnakant Pandey: Yes,
+Vishwa Sriram: Yes,
+Krishnakant Pandey: we got out.
+Vishwa Sriram: we
+Vikash Srivastava: call and it checks that it is for a trunk and check if the trunk has a recording enabled uh sorry transcription enabled
+Krishnakant Pandey: Okay.
+Vikash Srivastava: Right? So it will be rather a backend API job itself right which will
+Piyush Sahoo: Mhm.
+Vishwa Sriram: Mhm.
+Vikash Srivastava: do all the so you don't need to pass it along to chameleio and free switch because even
+Vishwa Sriram: True.
+Vikash Srivastava: though you pass it how will this inform recording uploader is the
+Vishwa Sriram: Yeah.
+Vikash Srivastava: problem right the other way which I can do
+ 
+ 
+00:12:27
+ 
+Vishwa Sriram: Yeah.
+Krishnakant Pandey: Okay.
+Vikash Srivastava: uh and let me know if it is if it makes sense for you guys other I can do is like write a metadata uh file for the recording uh there itself with call id dot meta uh some config okay and you can read from the recording uploader that okay this is the uh recording metadata and use that either way I'm fine with
+Vishwa Sriram: Got it. Uh, makes sense.
+Vikash Srivastava: Right. So either backend API itself identifies it is anyways a post-processing thing. Right? So why to have in real time all these uh additional things going
+Vishwa Sriram: Yeah,
+Vikash Srivastava: on right?
+Krishnakant Pandey: Will we have live transcription also in
+Vishwa Sriram: true.
+Piyush Sahoo: No.
+Vikash Srivastava: Live transcription will
+Vishwa Sriram: a live transcription.
+Krishnakant Pandey: future?
+Vishwa Sriram: We can't write because uh
+Vikash Srivastava: involve in that case it will involve u streaming that
+Vishwa Sriram: because
+Vikash Srivastava: audio live. Uh
+Krishnakant Pandey: Mhm. Yeah. Yeah.
+Vikash Srivastava: KK
+Vishwa Sriram: speaking of that uh so Driveex has this use case where they require their transcription to be live I mean their recording to be live in WebRTC product.
+ 
+ 
+00:13:52
+ 
+Vikash Srivastava: live as in
+Vishwa Sriram: U live as in like they want it. So let's say that I'm saying hey okay they want it to be uh get they want the uh they want to get the uh this thing immediately the
+Piyush Sahoo: recording or
+Vishwa Sriram: recording recording itself they will do the transcription
+Piyush Sahoo: transcription.
+Vishwa Sriram: there from their end because that will be a regional
+Vikash Srivastava: So they can do the stream right in the web RTC also.
+Vishwa Sriram: uh
+Piyush Sahoo: Yeah,
+Vikash Srivastava: Uh they could stream that call.
+Piyush Sahoo: that's what is happening right now. Vicash like in the web artist right now they're streaming itself recording it doesn't make sense what
+Vikash Srivastava: Yeah. Recording you can't give it live.
+Piyush Sahoo: they
+Vikash Srivastava: Uh uh Vishua right you can't have the recording
+Vishwa Sriram: Yeah. So that's what I told them.
+Vikash Srivastava: live.
+Vishwa Sriram: Uh they wanted us to check once again and get back to uh get get back on this.
+Vikash Srivastava: No uh if you have any uh uh concerns let me know.
+ 
+ 
+00:14:42
+ 
+Vishwa Sriram: Can we get on a Yeah.
+Vikash Srivastava: I I can I can jump on a call with them and explain
+Vishwa Sriram: Uh sure sure.
+Vikash Srivastava: them.
+Vishwa Sriram: Uh sure them. uh Vicash I'll schedule a call with them and we can explain them as well once this standup answer
+Vikash Srivastava: Yeah.
+Vishwa Sriram: ends.
+Vikash Srivastava: Yeah. So uh so uh Vishuad you are uh fine with
+Vishwa Sriram: Yeah.
+Vikash Srivastava: this transcription changes right it's anyways a uh
+Vishwa Sriram: True. Yes. Because makes
+Piyush Sahoo: That
+Vikash Srivastava: post-processing thing right uh instead of passing it from chameleio and all uh
+Vishwa Sriram: sense.
+Vikash Srivastava: just send it over uh in the uh send it over from the backend APIs itself I think you are anyways calling CDRs and other services Right for save
+Vishwa Sriram: Mhm.
+Vikash Srivastava: record
+Vishwa Sriram: Yeah. We'll be uh calming in the uh back end and everything. Yes.
+Vikash Srivastava: right you can do that in back end make
+Vishwa Sriram: Uhhuh. Yeah.
+Vikash Srivastava: sense to everyone okay
+ 
+ 
+00:15:38
+ 
+Piyush Sahoo: water.
+Vishwa Sriram: Yes. Yes.
+Vikash Srivastava: so uh so with that also we don't have any uh constraints making it live in a day right uh daytime
+Vishwa Sriram: Yes, it should be done. Yeah. In the daytime also we can do
+Vikash Srivastava: Yeah. So let's let's make it live both of these uh today,
+Vishwa Sriram: it.
+Vikash Srivastava: right?
+Vishwa Sriram: Yeah.
+Vikash Srivastava: Uh third thing was auto recharge.
+Vishwa Sriram: Yeah.
+Vikash Srivastava: Uh did we get any information
+Vishwa Sriram: No, Vicash.
+Vikash Srivastava: from
+Vishwa Sriram: Uh I'm trying my best to uh connect with someone at Razor Pay as well. Uh I'll be uh directly having this uh I'll I'll make a call back to them right now once the standard ends and I'll get a solution for
+Piyush Sahoo: Even I tried reaching out no response as well.
+Vishwa Sriram: those
+Piyush Sahoo: So um yes Vicash this team is slightly weak on the support also
+Vikash Srivastava: Oh man. Uh,
+Piyush Sahoo: Vicash regarding the uh SDKs right for the node and python SDK I have shared
+ 
+ 
+00:16:38
+ 
+Vikash Srivastava: f***.
+Piyush Sahoo: two GitHub repositories from my side uh from in the chat right now so as well got in a call few XMLs here and there we uh we have fixed and uh we are also automating all the API testing like whenever we push there is git actions for testing out all the APIs that are available uh in our uh documentation page that the public facing APIs. So that will be also one good way to test it out like if this uh APIs uh everything is working uh perfectly fine and uh I am really expecting it to have the you know uh SDK is live today
+Vikash Srivastava: Yeah,
+Piyush Sahoo: itself.
+Vishwa Sriram: Oh,
+Vikash Srivastava: just small small thing uh here send a message and look up a number
+Vishwa Sriram: okay.
+Vikash Srivastava: both are not available for us
+Piyush Sahoo: Uh yes. Uh the read me is kind of not yet done.
+Vikash Srivastava: Okay.
+Piyush Sahoo: It is just uh like you know uh so all these right like I will be doing the final review and once all those are done I'm trying my level best to have it today itself and uh add in our so there will be a specific sections in our documentation known as SDK specific for all the SDKs.
+ 
+ 
+00:17:53
+ 
+Vikash Srivastava: Yeah.
+Piyush Sahoo: So yeah and once all the SDKs are done we will have all the examples as well.
+Vikash Srivastava: So
+Piyush Sahoo: So if you right now go to our documentation I have added one uh Python uh voice API example in the integration page. Uh reason being we don't have much examples available but uh once we have the SDK is
+Vikash Srivastava: yeah,
+Piyush Sahoo: live I will have at least like 30 to 30 to 100 range of examples if we have that right in different languages different use cases.
+Vikash Srivastava: absolutely.
+Piyush Sahoo: Or we can have a separate page specific to
+Vikash Srivastava: Yeah. So the these all things we need to have uh honestly that's why the uh
+Piyush Sahoo: examples.
+Vikash Srivastava: DX is important for me de is important right uh another two things which I want uh to start with which was yeah you were saying
+Vishwa Sriram: Uh yes Vicas same thing uh from my end. So basically me and Kunal Sang we connected last night.
+Vikash Srivastava: something.
+Vishwa Sriram: Uh we uh discussed about how the system is currently.
+ 
+ 
+00:18:57
+ 
+Vishwa Sriram: I gave him complete idea as to what we have done so far and everything. And we discussed on building one test uh I mean uh one ECS or one service which just tests all the internal APIs because every now and then and every time you make a uh
+Vikash Srivastava: Yes.
+Vishwa Sriram: change in the staging or anything right so what we were thinking is we could make a function which can be uh uh I mean called from admin or could be a separate API which whenever you are doing something in staging and once you have tested your main use case you can run this uh script and it will test out every single uh endpoint that is uh with a with a particular flow as to hey let's say that we have a partner flow so what are the APIs that the partner would require what are the APIs that the that a normal consumer would require what are the APIs that a post user would
+Vikash Srivastava: This is this is very very important. So like we can actually add it in GitHub GitHub web hooks
+ 
+ 
+00:19:46
+ 
+Vishwa Sriram: require
+Vikash Srivastava: right whenever something is getting pushed to staging and main these should run and a clear pass result should come for the PR to be
+Vishwa Sriram: Yeah.
+Vikash Srivastava: merged.
+Vishwa Sriram: Yes. So that's what we discussed and we were uh we we will start doing that also. Hey
+Vikash Srivastava: Yeah. So let's do that uh with Tanishka and
+Vishwa Sriram: guys.
+Vikash Srivastava: Joti. Can I uh have two additional features which I was thinking uh guys um just and let me know your thoughts on this not want to do not want to add lot of features on the table but if you guys have noticed a majority of the customers who are coming to voice API are just for streaming and recording right they just want to stream the audio somewhere and record the call, right?
+Krishnakant Pandey: I'm
+Piyush Sahoo: True. True. And one more use case is that IVR like you know the number
+Krishnakant Pandey: just
+Vikash Srivastava: Yeah. Yeah. So,
+Piyush Sahoo: like
+Vikash Srivastava: uh IVR uh stream.
+ 
+ 
+00:21:00
+ 
+Vikash Srivastava: So, I was thinking why not make the streaming also with pipecat and others very simplified you where you don't have to do a development and all. So let's say in application itself you can select you want to stream the audio right in the application section uh go here when you are building an application uh you select okay do you have this voice streaming use case right you can just select you want to stream the audio put the URL uh toggle on recording or trans uh transcription right for that call and save behind the scene it will create the same XML which we expect right
+Piyush Sahoo: Cool.
+Vikash Srivastava: and host it uh somewhere on S3 right for
+Krishnakant Pandey: Mhm.
+Vishwa Sriram: Yes,
+Krishnakant Pandey: This
+Vishwa Sriram: this would make so much of sense because actually this is something that we have also heard from a lot of customers right like having their own XML in the recording and those things people find it actually difficult to build that XML because me and P have already gotten into a couple of calls say just configuring this
+ 
+ 
+00:22:08
+ 
+Piyush Sahoo: So vic something just like um you know the
+Vishwa Sriram: XML templates
+Vikash Srivastava: Yes.
+Piyush Sahoo: live platform but we are building the pipe cat will be in the back end it's just like vappy platform right like if something which you are
+Vikash Srivastava: Huh?
+Vishwa Sriram: Uh no it's basically you just put the streaming link and we build the XML and we'll put it in
+Piyush Sahoo: telling
+Vishwa Sriram: S3. So whenever the person makes the call, we pull the XML from the S3. They don't have to push the XML.
+Vikash Srivastava: Yeah,
+Vishwa Sriram: That's the thing that we cash
+Vikash Srivastava: they don't have they don't have to manage XMLs and all. What we will do internally as soon as they do this thing,
+Vishwa Sriram: out.
+Vikash Srivastava: right? What we will eventually do uh behind the scene, it will form a XML, post it and it will put a S3 URL and literally in the application answer URL, we will automatically put that S3 URL right somewhere. uh and fetch uh like whenever a call happens with this application it
+ 
+ 
+00:23:02
+ 
+Piyush Sahoo: Yeah,
+Vikash Srivastava: will fetch that sense to you
+Piyush Sahoo: got
+Vikash Srivastava: all.
+Piyush Sahoo: it.
+Krishnakant Pandey: Okay,
+Vishwa Sriram: Yes.
+Vikash Srivastava: So my uh my customers with streaming use case right
+Vishwa Sriram: My gosh. Makes so much
+Tanishka Rastogi: Yes.
+Vishwa Sriram: sense.
+Vikash Srivastava: shouldn't have to do a lot of development that's the intent.
+Piyush Sahoo: Just like how Evo is doing right now with their PHLO and their agentic AI
+Vishwa Sriram: True.
+Vikash Srivastava: Yeah. See uh yeah
+Krishnakant Pandey: PH is something much more also than this regard
+Piyush Sahoo: capabilities.
+Vishwa Sriram: PL is a programming
+Vikash Srivastava: very yeah complete script see uh phlo
+Krishnakant Pandey: like
+Vishwa Sriram: scripting.
+Vikash Srivastava: is lot more but if you I'm telling you from both perspective of pleos phlo and twillio studio right uh and bandit flex and vonage uh uh studio right all these products have a zero paying customer zero dollars. Nobody pays for this, right? And these processing engines are costly to maintain. Do you get right?
+Krishnakant Pandey: Mhm.
+Vikash Srivastava: And you have zero paying customer.
+ 
+ 
+00:24:15
+ 
+Vikash Srivastava: Uh we don't want to put a heavy processing engine,
+Vishwa Sriram: Mhm.
+Vikash Srivastava: right? Let's build a base and uh if we see more requirements, we'll keep on adding that.
+Krishnakant Pandey: Mhm.
+Vikash Srivastava: Make sense to you all, right?
+Piyush Sahoo: Got
+Vishwa Sriram: 100% rush.
+Tanishka Rastogi: Yes.
+Piyush Sahoo: it.
+Krishnakant Pandey: Jesus.
+Vikash Srivastava: Uh Tanishka do did you got the
+Tanishka Rastogi: Yes,
+Vikash Srivastava: requirement uh let's let's
+Tanishka Rastogi: we can.
+Vikash Srivastava: build this and I I just want to make this swift quickly right uh do you guys feel it is a big task or uh the
+Krishnakant Pandey: No, no. It's just We can do it.
+Vikash Srivastava: way it is a smaller
+Vishwa Sriram: It it could be
+Krishnakant Pandey: We can do it.
+Vishwa Sriram: done.
+Krishnakant Pandey: You can take
+Vikash Srivastava: task right we we should be able to do
+Krishnakant Pandey: Yep.
+Piyush Sahoo: I think we can uh I can help Teska and Joti both of them on uh running the script or like
+Vishwa Sriram: True.
+Vikash Srivastava: Right.
+Tanishka Rastogi: Yes.
+Piyush Sahoo: how running the python uh sorry pipecat locally so that they can get an idea on the entire flow how the calls are getting connected.
+ 
+ 
+00:25:16
+ 
+Piyush Sahoo: Then with that maybe they should be able to do
+Vikash Srivastava: Yeah. Because see P in my opinion this is a very small task but it adds a lot
+Piyush Sahoo: it.
+Vikash Srivastava: of value to my customer.
+Krishnakant Pandey: Mhm.
+Vishwa Sriram: 100%.
+Vikash Srivastava: is everyone aligned with that right for me like if I I I'll go and
+Vishwa Sriram: Yes,
+Krishnakant Pandey: Yep.
+Vikash Srivastava: put this code very quickly uh uh like I just need to expose one
+Vishwa Sriram: 100%.
+Vikash Srivastava: API behind the scene which will just take the stream XML uh the URL uh recording equal to true or this this and eventually create an application XML application in a text format put into S3 and give a application ID uh application URL uh in return right which uh front end will start using it right uh
+Krishnakant Pandey: This is
+Vishwa Sriram: Yes,
+Vikash Srivastava: do you guys feel that is feasible quick
+Krishnakant Pandey: this. Yeah.
+Vikash Srivastava: thing so I
+Tanishka Rastogi: Yeah.
+Krishnakant Pandey: Yeah.
+Vishwa Sriram: it should be
+Tanishka Rastogi: Yes.
+Vishwa Sriram: done.
+Vikash Srivastava: I want to launch this this week what do you guys Think is it feasible or too
+ 
+ 
+00:26:31
+ 
+Krishnakant Pandey: I think this can be
+Vikash Srivastava: much?
+Vishwa Sriram: uh because they might need some idea on what our streaming product is and stuff
+Krishnakant Pandey: done.
+Vishwa Sriram: like those.
+Vikash Srivastava: Yeah.
+Piyush Sahoo: Absolutely.
+Vikash Srivastava: Yeah.
+Piyush Sahoo: So
+Vishwa Sriram: Uh once they get the idea then I think we
+Piyush Sahoo: some
+Vikash Srivastava: No, I I mean uh definitely uh DX needs to be done for that.
+Vishwa Sriram: can.
+Vikash Srivastava: Providing proper documentation for that. uh a sort of video how you can do it right quickly.
+Vishwa Sriram: Yep.
+Vikash Srivastava: Uh with this what what helps us right visual push right uh that uh customer with streaming is not spending a lot of basic streaming use cases like pipecat and all is not spending a lot of time developing things. Second um we do have a control you see a lot of these times we are seeing this okay customer hang up doesn't hang ups and disconnect the streams and it closes off and all like we retries and all right all these things happen because we are building that XML we can have a lot of control right does
+ 
+ 
+00:27:44
+ 
+Piyush Sahoo: Yep. Yep.
+Vishwa Sriram: Come on.
+Krishnakant Pandey: Yes, that's makes
+Piyush Sahoo: Yep.
+Krishnakant Pandey: sense.
+Vikash Srivastava: Then uh let's uh um KK would you take the front end work and uh Tanishka and Push can you take the uh backend work for
+Krishnakant Pandey: Yep.
+Piyush Sahoo: Yeah, sure. Sure.
+Vikash Srivastava: this?
+Tanishka Rastogi: Yes,
+Piyush Sahoo: I can uh you can help with
+Tanishka Rastogi: it is.
+Krishnakant Pandey: We can do it.
+Vikash Srivastava: Okay, cool.
+Piyush Sahoo: that.
+Vikash Srivastava: So uh today we will make live the transcription. We will make live uh the postp uh system uh uh push you need to write an customer communication for today and tomorrow we will make these things live. Okay.
+Piyush Sahoo: Gash is um I ra I forgot his name.
+Vikash Srivastava: Yeah
+Piyush Sahoo: Uh when the the person for onboarding when is he joining?
+Vikash Srivastava: he has joined Rudish. He has
+Piyush Sahoo: Rud wasn't aware of that.
+Vikash Srivastava: joined.
+Piyush Sahoo: I think I'm still invited for the calls. So I think for the next one week maybe I can take on the calls then he can get over the onboarding.
+ 
+ 
+00:28:49
+ 
+Vikash Srivastava: Yes.
+Piyush Sahoo: Yep. Yep. Okay. Got it.
+Vikash Srivastava: So the like uh hope one week will be gone into like he needs to be on boarded properly understand the system and all right. He is there right?
+Piyush Sahoo: Got it. You know
+Vikash Srivastava: So slowly you guys should be out of onboarding and same for the support as
+Piyush Sahoo: what's
+Vikash Srivastava: well, right? So we we as a team just focus upon um developing stuff,
+Piyush Sahoo: Got it.
+Vikash Srivastava: right?
+Piyush Sahoo: Got it. Uh also uh can you add him in the slack as well? Like I do not see regression in the slack.
+Vikash Srivastava: Oh,
+Piyush Sahoo: So
+Vikash Srivastava: I'm just adding him into Slack. So,
+Piyush Sahoo: Vicash Kish would require uh an offer letter. I sent him a mail but is not enough for his college. You would require an offer letter to give full time and uh produce the videos slightly faster.
+Vikash Srivastava: offer uh offer letter uh will be done.
+ 
+ 
+00:29:56
+ 
+Vikash Srivastava: Uh I hope you all would have got a email from great HR.
+Piyush Sahoo: No.
+Krishnakant Pandey: Oh my gosh.
+Vikash Srivastava: You didn't got an email from great HR yet.
+Piyush Sahoo: No.
+Krishnakant Pandey: No,
+Piyush Sahoo: yet.
+Vishwa Sriram: I got one Vikas. Uh but yeah,
+Krishnakant Pandey: we did not get it with Ashley.
+Piyush Sahoo: I do
+Krishnakant Pandey: Are
+Vishwa Sriram: I I I got But yeah, like another
+Piyush Sahoo: not
+Vikash Srivastava: So no uh he is working with uh uh
+Vishwa Sriram: spider.
+Krishnakant Pandey: you
+Vikash Srivastava: he's working um um I I keep on forgetting the name sorry um Bhara Bhara is working upon that okay you would all receive an email from him uh from him or great HR. Okay. And you'll have a automated offer letters uh from the great HR platform itself. Okay.
+Vishwa Sriram: Okay. I did not get anything from great HR platform.
+Vikash Srivastava: You so
+Vishwa Sriram: Yeah,
+Vikash Srivastava: uh
+Vishwa Sriram: I got a manual mail from Bargo uh because I asked for it uh to show to my parents here.
+ 
+ 
+00:31:07
+ 
+Piyush Sahoo: I not get it yet.
+Vikash Srivastava: okay.
+Piyush Sahoo: I have asked Bab. I think you'll be he should be sending.
+Vikash Srivastava: Yeah. Yeah. He he is doing guys uh like he he's
+Piyush Sahoo: Yeah.
+Vikash Srivastava: also uh doing a lot of things in background uh to get your
+Piyush Sahoo: Yeah.
+Vikash Srivastava: PF sorted out your insuranceances. He's working with uh ISO standard folks and all. So he's doing a lot of things.
+Piyush Sahoo: You got
+Vikash Srivastava: So uh bear with us.
+Piyush Sahoo: it.
+Vikash Srivastava: There are lot of paperwork which I don't want to participate into which actually went into Bargo's bucket. Right. So, right. So, he's uh he's literally onto it.
+Piyush Sahoo: H
+Vikash Srivastava: Um so, good thing by end of this month we would be ISO 27,01 and sock to complied compliance ready. Okay. So we should be good with compliance certification right. Uh second uh uh we should also be getting the VNO licensing by this month.
+Krishnakant Pandey: Sure.
+ 
+ 
+00:32:17
+ 
+Vikash Srivastava: Okay. Uh so some of these works are going in background guys. Um some of you might have received laptop some of you will uh get in coming week. Okay. Uh so
+Krishnakant Pandey: Thank you.
+Piyush Sahoo: Thank you guys.
+Vikash Srivastava: yeah so everyone will uh like he's working on these things it's bit more than like I writing a email or sending a text message he he's doing a lot of logistical work right behind the scene so please bear uh sorry guys it's it's a single person too much work uh right Yeah.
+Piyush Sahoo: Yes,
+Vikash Srivastava: Uh fine.
+Piyush Sahoo: absolutely.
+Vikash Srivastava: Uh uh so uh we are aligned on these two things. Now coming to uh coming to this point uh today
+Piyush Sahoo: Cool.
+Vikash Srivastava: uh like yesterday our traffic was pretty good. Nice one, right? Uh it was stable. Uh nothing broke as such, right? And um we did a good traffic volume as well yesterday with some customers starting to ramp up again. Uh today I'm going to uh um get SPR uh as a carrier on boarded uh which I'm working with SPR uh and we will have 500 additional channels for 080. Okay.
+ 
+ 
+00:34:09
+ 
+Vikash Srivastava: uh and we would be now onwards just like how we are able to provide
+Vishwa Sriram: Got it.
+Vikash Srivastava: 140 number uh from tonight onwards we should be able to offer 160 numbers as well. Okay.
+Piyush Sahoo: Okay.
+Vikash Srivastava: So the first so the first customer we are onboarding for 160
+Vishwa Sriram: We record it.
+Vikash Srivastava: number on voage platform like we have onboarded 160 numbers but customer directly purchases from Tata not us giving them right. So now with this we will uh have this uh
+Vishwa Sriram: Mhm.
+Vikash Srivastava: um uh like bought directly to Wage and sent given to them right. So PNB PNB housing finance is the first customer on this kind of number. Uh so with this we have ICICI bank which is already live along with craft hiq. We have branch international whose number is getting who whose number is has come and getting provisioned. We havec finance uh coming in PNB housing finance uh getting onboarded right. uh we have uh RBL bank being onboarded as part of uh GRABS right so so we have like all the major banks coming in okay so
+ 
+ 
+00:35:49
+ 
+Piyush Sahoo: And their major use case is AI
+Vikash Srivastava: yeah now the think of it like a foot in a
+Piyush Sahoo: calls.
+Vikash Srivastava: door strategy right uh we first go to ICI saying okay do AI calls with us right but eventually uh going to the scenario where we will do all sorts of call for them right
+Piyush Sahoo: God, it makes sense.
+Vikash Srivastava: so in all of these banks uh will have uh humongous volume okay that's why carried integration is one of the key things. So, uh just in case if you guys are not aware, we are now offering UAE numbers. Okay, UAE numbers. Okay, any customer which comes for the UAE, please say okay, we do offer. Okay.
+Piyush Sahoo: Can we show it in the front end as well?
+Vikash Srivastava: Oh, UAE numbers are hell costly.
+Vishwa Sriram: Okay.
+Vikash Srivastava: $130 for procuring a number. Okay. And uh the cost of that is 35
+Vishwa Sriram: So,
+Vikash Srivastava: rupees per minute kind of
+Vishwa Sriram: 13,000
+Vikash Srivastava: cost. Okay guys, so it is hell costly.
+ 
+ 
+00:37:24
+ 
+Vikash Srivastava: So it is it is on request. Okay. Uh this week Rud is working uh on getting the car integrations done for US and Europe as well. Okay. So uh we will start offering US numbers right away.
+Krishnakant Pandey: That's
+Vikash Srivastava: Okay.
+Piyush Sahoo: Lord.
+Vishwa Sriram: Uh,
+Krishnakant Pandey: great.
+Vishwa Sriram: Vikas, one minute. I'm getting a call from Suman. I might need to drop
+Vikash Srivastava: Yeah. I'm also getting I just Yeah. Okay. So, uh thank you guys. Thank you Vishua. So that's the state uh uh guys.
+Krishnakant Pandey: Sure.
+Vikash Srivastava: I I just wanted to keep you updated so that uh we are all aligned. Okay. And
+Piyush Sahoo: Vicash remove the branded caller ID from the front end.
+Krishnakant Pandey: Great.
+Piyush Sahoo: people are just randomly spamming it and make the 1 140 160 and 180 a little bit more informatically uh like you know once they select you know click on request we should also collect their response like what is the volume you are looking for what is the reason what is the call type blah blah blah so only the serious people who are actually interested they will be uh you know sign uh filling up or clicking on that button in the front end.
+ 
+ 
+00:38:52
+ 
+Vikash Srivastava: Absolutely man that's important KK can you do this information yeah
+Krishnakant Pandey: Yeah,
+Vikash Srivastava: and also uh this information I have to give everybody that
+Piyush Sahoo: No.
+Krishnakant Pandey: sure.
+Vikash Srivastava: uh just add this DT registration guide as well uh there that hey if for 160140 you should first follow this document to do the DT registration and once you are completed uh you should they should have this DT registration checkbox okay done then requested right else we are literally getting tons of support emails
+Krishnakant Pandey: Okay. Okay.
+Vikash Srivastava: doing Nothing
+Krishnakant Pandey: Got it.
+Piyush Sahoo: Yep. And after DT registration they get a particular number we need to make sure that they provide that
+Vikash Srivastava: right.
+Krishnakant Pandey: Sure.
+Piyush Sahoo: particular number and that should be something nonavoidable like you know the entire documentation should be available in our uh in the phone number page itself. Once the registration is there, once they get that particular number, then only they should be able to uh reach out to
+Vikash Srivastava: Yeah. else it will it creates a lot of uh stickers where people are literally
+ 
+ 
+00:39:57
+ 
+Piyush Sahoo: us.
+Vikash Srivastava: not u serious about it but they just create it right uh and this we have seen in the cases of 92 series
+Krishnakant Pandey: Yep.
+Vikash Srivastava: as well right uh push like everybody requesting 92 series and the number is still not sold
+Piyush Sahoo: True, true.
+Vikash Srivastava: it.
+Piyush Sahoo: Like this was something very important like uh every day morning you'll wake up out of 50 uh 30 of them will be the spam call in the night especially my slack will be keep on ringing in the night.
+Vikash Srivastava: Yeah. Yeah. Can you guys uh also when I go into did inventory, this is not letting me search the specific uh series, right?
+Krishnakant Pandey: Mhm.
+Vikash Srivastava: It
+Vishwa Sriram: We have the API for it.
+Krishnakant Pandey: M yeah even I have added
+Vishwa Sriram: I think we can just
+Vikash Srivastava: should.
+Vishwa Sriram: add
+Krishnakant Pandey: this filter in this API as well just make changes on front end so it will be
+Vikash Srivastava: Okay. So fine.
+Krishnakant Pandey: there
+Vikash Srivastava: So we are all aligned.
+ 
+ 
+00:41:12
+ 
+Vikash Srivastava: what we need to do and uh yeah uh support for TLS on trunks is now done right uh flutter SDK like uh um Visha you said that guy would be
+Vishwa Sriram: Yes. Uh yes, Vash.
+Vikash Srivastava: working
+Vishwa Sriram: Uh I'll be giving him the P and everything today and we'll get it done. Even me and P to connect.
+Piyush Sahoo: Yes,
+Vikash Srivastava: yeah
+Piyush Sahoo: Vika Dhir seems slightly good. Uh before even uh you know getting him here, I gave him a random task and he was able to do it
+Vishwa Sriram: Yes,
+Piyush Sahoo: properly.
+Vishwa Sriram: I I had given him a a call. I was sitting in a call with him for one hour and he was able to understand what we do. Uh he was able to integrate and stuff, right? So I think we can give him a
+Vikash Srivastava: Yeah, let's let's uh let's give him a chance.
+Vishwa Sriram: chance.
+Vikash Srivastava: uh uh push uh like our intent is with these interns we shall be able to create as many SDKs docu uh like examples as we can
+ 
+ 
+00:42:15
+ 
+Piyush Sahoo: Got it because that's the entire intent on devil, right?
+Vikash Srivastava: right
+Piyush Sahoo: So I want to I I'll make a list of everything that is there so that even a check box for both of us to check it out. Okay fine these are the things with the timelines and this needs to be done no matter what. And uh one thing which I realized the videos are taking good amount of time to get created.
+Vikash Srivastava: Yeah.
+Piyush Sahoo: Reason being uh he's making it like we are making it like as a production like so it is taking some good amount of time but I'm sure that Kish is going to do it really good
+Vikash Srivastava: How how how did the WPY Can you show the WPY video?
+Piyush Sahoo: like actually uh right now I do not have it.
+Vikash Srivastava: Yes.
+Piyush Sahoo: So Vappy what happened is that initially uh I made it with uh this thing with Windows and now that I got with Mac I was like let's do it with Mac and uh the brand template did not match our current brand template.
+ 
+ 
+00:43:05
+ 
+Piyush Sahoo: So I recently asked KK for the brand template. I'm kind of remodifying it. Uh but I can show you the uh you know normal video which I took it. Uh Vikas I'll send you the link for
+Vikash Srivastava: Yeah. Uh guys, uh if we can expedite it whatever we can,
+Piyush Sahoo: that.
+Vikash Srivastava: right? Uh and at least add the video and then improve it, right?
+Piyush Sahoo: Got it.
+Vikash Srivastava: Uh the point is that we should be having um
+Piyush Sahoo: I'll send you the
+Vikash Srivastava: like I'm seeing a lot of these support tickets right is just for lack of information right if the information is present it will be much easier for all of us right yeah uh so like
+Piyush Sahoo: Got it.
+Vikash Srivastava: showing somewhere like hey uh uh KYC is mandatory and you need to purchase your numbers for inbound and outbound call, right? Uh this should be clear to the customer, right? Uh it shouldn't be uh like uh hidden sort of thing, right? Uh
+Krishnakant Pandey: Yes.
+ 
+ 
+00:44:15
+ 
+Krishnakant Pandey: Now it's more than visible on like lot of places right if it's a trial number we're clearly mentioning that
+Vikash Srivastava: so
+Krishnakant Pandey: you cannot use it for inbound purposes and two things are there but uh I feel there is enough information right because around these things
+Vikash Srivastava: Second thing which I want uh is uh uh is generally um spam one which uh spam and branded caller branded caller id I'm pushing sum to close it today itself uh it is costing 2,999 from AEL for block of 10 numbers. Okay, so we can tell customers that hey and we will not take any margins. Okay, do it uh u offer it cheaper,
+Piyush Sahoo: Got
+Vikash Srivastava: right? Let customers have a branded color ID, right? So I'm going to get this sorted out today. Okay, guys.
+Piyush Sahoo: it.
+Krishnakant Pandey: So we should allow them to request for it because nor not on the platform
+Piyush Sahoo: Got it.
+Krishnakant Pandey: now.
+Vikash Srivastava: branded caller ID you should right uh eventually uh uh tomorrow or day after right I will tell you uh for that also we shall have a clear form that hey do this this this uh this is the pricing and then only it comes as a verified lead rather than people clicking on branded caller ID creating support tickets left right
+ 
+ 
+00:45:46
+ 
+Piyush Sahoo: Got
+Vikash Srivastava: and center right so Uh
+Krishnakant Pandey: nurture. Yes. Yes. Sure.
+Vikash Srivastava: yeah and the second information second feature which I was talking about first is this which I talked
+Piyush Sahoo: it.
+Vikash Srivastava: about cream second is guys uh I was thinking to add a section for web hook URL in trunk as well
+Krishnakant Pandey: Okay.
+Vikash Srivastava: right you set up a web hook URL where you will
+Krishnakant Pandey: Mhm.
+Vikash Srivastava: get information call backs for call initiated hang up and answered.
+Krishnakant Pandey: Okay. Sure. Because we can do this.
+Piyush Sahoo: super important actually like everyone is asking for
+Krishnakant Pandey: It's already there.
+Vikash Srivastava: Okay, these these two things right I I'm not going to take any features and all but these are
+Piyush Sahoo: that.
+Vikash Srivastava: the pain points which I'm seeing from the support tickets right that's why I'm pushing for this right so the first one uh the stream XML I think it shouldn't be a big work guys if I'm correct uh do you guys agree with
+ 
+ 
+00:46:56
+ 
+Krishnakant Pandey: Yep. Of course you
+Vikash Srivastava: that right. So,
+Krishnakant Pandey: guys.
+Vikash Srivastava: uh it shouldn't be a big work for the first one. Uh the second one we will uh yeah so this week let's target some of these if it makes sense to you guys all right so uh let's have uh u one person let's say Tanishka taking
+Vishwa Sriram: Yeah.
+Vikash Srivastava: up this uh first part along with push right second we can assign to
+Vishwa Sriram: Heat.
+Vikash Srivastava: jotion or something right uh and let her develop the mechanism for callbacks right or any of us uh I I would rather uh let's say if it is difficult for them uh I can take it on okay Kunal I uh want this WhatsApp where it is like I I'm not seeing it to be
+Kunal Dholiya: Uh Vikas there is uh there are two things one is uh app preview.
+Vikash Srivastava: working.
+Kunal Dholiya: So there are lot of question answers that we have to provide and then also needs to provide them a proper uh recording of the how we are using the meta.
+ 
+ 
+00:48:14
+ 
+Kunal Dholiya: So I'm I'm working on that. So in morning only like me and KK were discussing over the chat and I help him to set up the uh my account on onto his account. So basically a testing account. So there is still long process like from the meta side like I also need maybe someone's help to you know answer some of the questions. So I'll ping you separately for
+Vikash Srivastava: Yep.
+Kunal Dholiya: that.
+Vikash Srivastava: Uh for for things to be made live, we need to move faster. What do you need for this to be complete?
+Kunal Dholiya: So right now what I did is like the auto uh automatic flow I have disabled it. So user can still go to the manual flow and uh if they are already having the meta meta account and Baba VA ID then they will be able to use the our WhatsApp and for the and
+Vikash Srivastava: And if they are not uh how about
+Kunal Dholiya: if there for the calls uh once the uh this air preview is done there
+Vikash Srivastava: call
+ 
+ 
+00:49:16
+ 
+Kunal Dholiya: is uh I'll need a public you wait a second let me tell you just a Okay, there is one URL that I'm looking for the call. So I'll I'll I'll ping you separately. I forgot like there is one one thing which I I required about the uh this one cameo only and uh I'll I'll need that URL to enable the
+Vikash Srivastava: If you can uh kunal like um there's lot of things
+Kunal Dholiya: calling.
+Vikash Srivastava: on the plate right um let's close it uh let me know by end of the day whatever you need right I if
+Kunal Dholiya: Yeah.
+Vikash Srivastava: um if not I I will have to um like rebuild it and all, right? So, uh let me know what it takes for you to close it.
+Kunal Dholiya: Yeah.
+Vikash Srivastava: Let's get things to closer, right? Uh okay.
+Kunal Dholiya: Yes.
+Vikash Srivastava: So
+Kunal Dholiya: I'll actually need two things.
+Vikash Srivastava: yeah.
+Kunal Dholiya: I'll ping you and uh let's get it started and then I think voice should be working. And yeah one more thing like I asked Vishwa to add one number so that I can uh convert Wobb's number into WhatsApp business number and uh test it with
+Vikash Srivastava: Yeah,
+Kunal Dholiya: that.
+Vikash Srivastava: let's let's do that then.
+Krishnakant Pandey: Yes,
+Vikash Srivastava: Uh then we have uh okay things. Um you take the ownership of that. Uh um I will guys um add the uh web hook mechanism. Okay. Uh ASAP. Okay.
+Krishnakant Pandey: do let me
+Kunal Dholiya: Uh uh one more thing I have al also like uh completed the campaigns.
+Vikash Srivastava: Um,
+Krishnakant Pandey: know.
+Kunal Dholiya: So campaigns are uh deployed on the de console.
+Vikash Srivastava: okay. Okay. Please. Uh, campaign is there, right? Uh, fine.
+ 
+ 
+Transcription ended after 00:52:44
+
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.

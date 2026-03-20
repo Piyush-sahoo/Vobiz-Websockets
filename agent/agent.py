@@ -11,6 +11,7 @@ import base64
 import asyncio
 import logging
 import struct
+from typing import Optional, List
 
 import websockets
 from dotenv import load_dotenv
@@ -40,8 +41,10 @@ logger = logging.getLogger("agent")
 
 # ---------------------------------------------------------------------------
 # OpenAI client (used for both LLM and TTS)
+# Optional — only created when OPENAI_API_KEY is set.
+# The XML builder (xml_builder.py) does NOT require OpenAI.
 # ---------------------------------------------------------------------------
-openai_client = AsyncOpenAI(api_key=OPENAI_API_KEY)
+openai_client = AsyncOpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
 
 
 # ---------------------------------------------------------------------------
@@ -177,16 +180,16 @@ class CallSession:
 
     def __init__(self, ws):
         self.ws = ws  # Vobiz WebSocket connection
-        self.stream_id: str | None = None
-        self.call_id: str | None = None
+        self.stream_id: Optional[str] = None
+        self.call_id: Optional[str] = None
         self.is_playing = False
-        self.conversation_history: list[dict] = [
+        self.conversation_history: List[dict] = [
             {"role": "system", "content": AGENT_SYSTEM_PROMPT}
         ]
         self.transcript_buffer = ""
-        self.silence_timer: asyncio.Task | None = None
+        self.silence_timer: Optional[asyncio.Task] = None
         self.deepgram_ws = None
-        self._deepgram_task: asyncio.Task | None = None
+        self._deepgram_task: Optional[asyncio.Task] = None
 
     async def start_deepgram(self):
         """Connect to Deepgram via raw WebSocket for live transcription."""

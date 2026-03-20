@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vobiz — Stream Application Builder</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #f5f6fa;
+      --card:        #ffffff;
+      --border:      #e2e5ee;
+      --primary:     #4f46e5;
+      --primary-hov: #4338ca;
+      --danger:      #ef4444;
+      --danger-hov:  #dc2626;
+      --success:     #16a34a;
+      --text:        #1e1e2e;
+      --muted:       #6b7280;
+      --code-bg:     #f0f1f5;
+      --radius:      10px;
+      --shadow:      0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 32px 16px 64px;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .logo-mark {
+      width: 38px; height: 38px;
+      background: var(--primary);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -1px;
+    }
+    .logo-text {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.5px;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 640px;
+      margin: 0 auto 24px;
+      padding: 28px 32px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── Form ── */
+    .field { margin-bottom: 20px; }
+    .field:last-child { margin-bottom: 0; }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    label span.required { color: var(--danger); margin-left: 2px; }
+    label span.hint {
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 12px;
+      margin-left: 6px;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    select {
+      width: 100%;
+      padding: 9px 12px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      font-size: 14px;
+      color: var(--text);
+      background: #fff;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input[type="text"]:focus,
+    input[type="url"]:focus,
+    select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+    }
+    input.error { border-color: var(--danger); }
+
+    .field-hint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 5px;
+    }
+    .field-error {
+      font-size: 12px;
+      color: var(--danger);
+      margin-top: 5px;
+      display: none;
+    }
+    .field-error.visible { display: block; }
+
+    /* ── Toggles row ── */
+    .toggles {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .toggle-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px;
+      cursor: pointer;
+      flex: 1;
+      min-width: 140px;
+      transition: border-color 0.15s, background 0.15s;
+      user-select: none;
+    }
+    .toggle-item:hover { border-color: var(--primary); }
+    .toggle-item input[type="checkbox"] {
+      width: 16px; height: 16px;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+    .toggle-item .toggle-label {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .toggle-item .toggle-desc {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s, opacity 0.15s;
+    }
+    .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      margin-top: 8px;
+    }
+    .btn-primary:hover:not(:disabled) { background: var(--primary-hov); }
+    .btn-danger {
+      background: #fef2f2;
+      color: var(--danger);
+      border: 1px solid #fecaca;
+      font-size: 13px;
+      padding: 8px 16px;
+    }
+    .btn-danger:hover:not(:disabled) { background: #fee2e2; }
+    .btn-copy {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+    .btn-copy:hover { background: var(--border); }
+
+    /* ── Result panel ── */
+    #result { display: none; }
+    #result.visible { display: block; }
+
+    .result-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+    .badge-success {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #dcfce7;
+      color: var(--success);
+      border: 1px solid #bbf7d0;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .result-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .result-row .result-key {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      min-width: 80px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .result-row .result-val {
+      font-size: 13px;
+      color: var(--text);
+      font-family: "SF Mono", "Fira Code", monospace;
+      word-break: break-all;
+      flex: 1;
+    }
+
+    .answer-url-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 14px 0;
+    }
+    .answer-url-box .aub-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #3b82f6;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .answer-url-box .aub-url {
+      font-family: "SF Mono", "Fira Code", monospace;
+      font-size: 12px;
+      color: var(--text);
+      word-break: break-all;
+      margin-bottom: 10px;
+    }
+    .answer-url-box .aub-hint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    /* ── XML Preview ── */
+    .xml-preview-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 8px;
+    }
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+      font-size: 12.5px;
+      line-height: 1.6;
+      color: var(--text);
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    /* ── Error banner ── */
+    .error-banner {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 8px;
+      padding: 12px 16px;
+      color: var(--danger);
+      font-size: 13px;
+      display: none;
+      margin-top: 14px;
+    }
+    .error-banner.visible { display: block; }
+
+    /* ── Spinner ── */
+    .spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+    .spinner.visible { display: inline-block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 20px 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .card { padding: 20px 18px; }
+      .toggles { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="logo-mark">V</div>
+      <span class="logo-text">Vobiz</span>
+    </div>
+    <p>Stream Application Builder &mdash; Generate your answer URL in seconds</p>
+  </header>
+
+  <!-- API Server Config -->
+  <div class="card">
+    <div class="section-title">API Server</div>
+    <div class="field">
+      <label for="apiUrl">
+        Server URL
+        <span class="hint">Your ngrok or hosted API URL</span>
+      </label>
+      <input
+        type="text"
+        id="apiUrl"
+        placeholder="https://abc123.ngrok.io"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <div class="field-hint">Paste your ngrok URL (run <code>python server.py</code> to start)</div>
+    </div>
+  </div>
+
+  <!-- Create Application Form -->
+  <div class="card">
+    <div class="section-title">Create Stream Application</div>
+
+    <div class="field">
+      <label for="streamUrl">
+        Stream WebSocket URL <span class="required">*</span>
+      </label>
+      <input
+        type="text"
+        id="streamUrl"
+        placeholder="wss://my-server.com/audio-stream"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <div class="field-hint">Your WebSocket endpoint that will receive the live audio from Vobiz</div>
+      <div class="field-error" id="streamUrlError">Must be a valid WebSocket URL starting with wss:// or ws://</div>
+    </div>
+
+    <div class="field">
+      <label for="contentType">Audio Format</label>
+      <select id="contentType">
+        <option value="audio/x-mulaw;rate=8000" selected>μ-law 8kHz (G.711) — Recommended for telephony</option>
+        <option value="audio/l16;rate=8000">PCM 16-bit 8kHz</option>
+        <option value="audio/l16;rate=16000">PCM 16-bit 16kHz</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Options</label>
+      <div class="toggles">
+        <label class="toggle-item" for="recording">
+          <input type="checkbox" id="recording" />
+          <div>
+            <div class="toggle-label">Recording</div>
+            <div class="toggle-desc">Record the call audio</div>
+          </div>
+        </label>
+        <label class="toggle-item" for="transcription">
+          <input type="checkbox" id="transcription" />
+          <div>
+            <div class="toggle-label">Transcription</div>
+            <div class="toggle-desc">Transcribe the call</div>
+          </div>
+        </label>
+        <label class="toggle-item" for="keepCallAlive">
+          <input type="checkbox" id="keepCallAlive" checked />
+          <div>
+            <div class="toggle-label">Keep Call Alive</div>
+            <div class="toggle-desc">Maintain call if stream drops</div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="callbackUrl">
+        Status Callback URL
+        <span class="hint">optional</span>
+      </label>
+      <input
+        type="text"
+        id="callbackUrl"
+        placeholder="https://my-server.com/vobiz-events"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <div class="field-hint">Vobiz will POST stream lifecycle events (start, stop) to this URL</div>
+    </div>
+
+    <button class="btn btn-primary" id="createBtn" onclick="createApplication()">
+      <span class="spinner" id="createSpinner"></span>
+      <span id="createBtnText">Create Application</span>
+    </button>
+
+    <div class="error-banner" id="createError"></div>
+  </div>
+
+  <!-- Result Panel -->
+  <div class="card" id="result">
+    <div class="result-header">
+      <div class="section-title" style="margin-bottom:0; border:none; padding:0;">Result</div>
+      <div class="badge-success">
+        &#10003; Application Created
+      </div>
+    </div>
+
+    <div class="result-row">
+      <span class="result-key">App ID</span>
+      <span class="result-val" id="resAppId">—</span>
+    </div>
+
+    <div class="answer-url-box">
+      <div class="aub-label">Answer URL — set this in your Vobiz Application</div>
+      <div class="aub-url" id="resAnswerUrl">—</div>
+      <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+        <button class="btn btn-copy" onclick="copyAnswerUrl()">Copy URL</button>
+        <span id="copyConfirm" style="font-size:12px; color:var(--success); display:none;">Copied!</span>
+      </div>
+      <div class="aub-hint">
+        Go to your Vobiz dashboard &rarr; Applications &rarr; set <strong>Answer URL</strong> to the URL above.
+        Every call using this application will stream audio to your WebSocket endpoint.
+      </div>
+    </div>
+
+    <div class="result-row">
+      <span class="result-key">Stream URL</span>
+      <span class="result-val" id="resStreamUrl">—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Recording</span>
+      <span class="result-val" id="resRecording">—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Transcription</span>
+      <span class="result-val" id="resTranscription">—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-key">Created</span>
+      <span class="result-val" id="resCreatedAt">—</span>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="xml-preview-label">Generated XML</div>
+    <pre id="resXmlPreview"></pre>
+
+    <hr class="divider" />
+
+    <button class="btn btn-danger" id="deleteBtn" onclick="deleteApplication()">
+      <span class="spinner" id="deleteSpinner" style="border-color:rgba(239,68,68,0.3); border-top-color:var(--danger);"></span>
+      <span id="deleteBtnText">Delete Application</span>
+    </button>
+    <div class="error-banner" id="deleteError"></div>
+  </div>
+
+  <footer>Powered by Vobiz &mdash; Stream Application Builder</footer>
+
+  <script>
+    // ─────────────────────────────────────────────────────────────
+    // State
+    // ─────────────────────────────────────────────────────────────
+    let currentAppId = null;
+
+    // ─────────────────────────────────────────────────────────────
+    // Helpers
+    // ─────────────────────────────────────────────────────────────
+    function getApiUrl() {
+      const raw = document.getElementById('apiUrl').value.trim().replace(/\/$/, '');
+      return raw || 'http://localhost:8000';
+    }
+
+    function setLoading(btnId, spinnerId, textId, loading, label) {
+      const btn = document.getElementById(btnId);
+      const spinner = document.getElementById(spinnerId);
+      const text = document.getElementById(textId);
+      btn.disabled = loading;
+      spinner.classList.toggle('visible', loading);
+      text.textContent = loading ? 'Please wait...' : label;
+    }
+
+    function showError(bannerId, message) {
+      const el = document.getElementById(bannerId);
+      el.textContent = message;
+      el.classList.add('visible');
+    }
+
+    function hideError(bannerId) {
+      document.getElementById(bannerId).classList.remove('visible');
+    }
+
+    function validateStreamUrl(url) {
+      return url.startsWith('wss://') || url.startsWith('ws://');
+    }
+
+    function formatDate(isoString) {
+      try {
+        return new Date(isoString).toLocaleString(undefined, {
+          dateStyle: 'medium', timeStyle: 'short'
+        });
+      } catch { return isoString; }
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // Create Application
+    // ─────────────────────────────────────────────────────────────
+    async function createApplication() {
+      hideError('createError');
+
+      // Validate stream URL
+      const streamUrl = document.getElementById('streamUrl').value.trim();
+      const streamUrlError = document.getElementById('streamUrlError');
+      const streamInput = document.getElementById('streamUrl');
+
+      if (!streamUrl || !validateStreamUrl(streamUrl)) {
+        streamInput.classList.add('error');
+        streamUrlError.classList.add('visible');
+        streamInput.focus();
+        return;
+      }
+      streamInput.classList.remove('error');
+      streamUrlError.classList.remove('visible');
+
+      const payload = {
+        stream_url:             streamUrl,
+        recording:              document.getElementById('recording').checked,
+        transcription:          document.getElementById('transcription').checked,
+        keep_call_alive:        document.getElementById('keepCallAlive').checked,
+        content_type:           document.getElementById('contentType').value,
+      };
+
+      const callbackUrl = document.getElementById('callbackUrl').value.trim();
+      if (callbackUrl) {
+        payload.status_callback_url = callbackUrl;
+      }
+
+      setLoading('createBtn', 'createSpinner', 'createBtnText', true, 'Create Application');
+
+      try {
+        const res = await fetch(`${getApiUrl()}/api/applications/stream`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          const detail = data.detail || `HTTP ${res.status}`;
+          showError('createError', `Error: ${detail}`);
+          return;
+        }
+
+        // Store for delete
+        currentAppId = data.app_id;
+
+        // Populate result panel
+        document.getElementById('resAppId').textContent        = data.app_id;
+        document.getElementById('resAnswerUrl').textContent    = data.answer_url;
+        document.getElementById('resStreamUrl').textContent    = data.stream_url;
+        document.getElementById('resRecording').textContent    = data.recording ? 'Enabled' : 'Disabled';
+        document.getElementById('resTranscription').textContent = data.transcription ? 'Enabled' : 'Disabled';
+        document.getElementById('resCreatedAt').textContent    = formatDate(data.created_at);
+        document.getElementById('resXmlPreview').textContent   = data.xml_preview;
+
+        // Show result card
+        const resultEl = document.getElementById('result');
+        resultEl.classList.add('visible');
+        resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      } catch (err) {
+        showError('createError',
+          `Could not reach the API. Make sure your server is running and the URL is correct.\n\nDetails: ${err.message}`
+        );
+      } finally {
+        setLoading('createBtn', 'createSpinner', 'createBtnText', false, 'Create Application');
+      }
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // Delete Application
+    // ─────────────────────────────────────────────────────────────
+    async function deleteApplication() {
+      if (!currentAppId) return;
+      hideError('deleteError');
+
+      const confirmed = confirm(
+        `Delete application ${currentAppId}?\n\nThe answer URL will stop working and any calls using it will fail.`
+      );
+      if (!confirmed) return;
+
+      setLoading('deleteBtn', 'deleteSpinner', 'deleteBtnText', true, 'Delete Application');
+
+      try {
+        const res = await fetch(`${getApiUrl()}/api/applications/${currentAppId}`, {
+          method: 'DELETE',
+        });
+
+        if (!res.ok && res.status !== 204) {
+          let detail = `HTTP ${res.status}`;
+          try { const d = await res.json(); detail = d.detail || detail; } catch {}
+          showError('deleteError', `Delete failed: ${detail}`);
+          return;
+        }
+
+        // Hide result, reset state
+        document.getElementById('result').classList.remove('visible');
+        currentAppId = null;
+        document.getElementById('copyConfirm').style.display = 'none';
+
+        alert('Application deleted successfully.');
+
+      } catch (err) {
+        showError('deleteError', `Could not reach the API. Details: ${err.message}`);
+      } finally {
+        setLoading('deleteBtn', 'deleteSpinner', 'deleteBtnText', false, 'Delete Application');
+      }
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // Copy Answer URL
+    // ─────────────────────────────────────────────────────────────
+    async function copyAnswerUrl() {
+      const url = document.getElementById('resAnswerUrl').textContent;
+      try {
+        await navigator.clipboard.writeText(url);
+        const confirm = document.getElementById('copyConfirm');
+        confirm.style.display = 'inline';
+        setTimeout(() => { confirm.style.display = 'none'; }, 2000);
+      } catch {
+        prompt('Copy this URL:', url);
+      }
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // Allow Enter key on stream URL field
+    // ─────────────────────────────────────────────────────────────
+    document.getElementById('streamUrl').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') createApplication();
+    });
+
+    // Clear error styling on input
+    document.getElementById('streamUrl').addEventListener('input', function() {
+      this.classList.remove('error');
+      document.getElementById('streamUrlError').classList.remove('visible');
+    });
+  </script>
+</body>
+</html>
